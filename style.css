@@ -591,6 +591,24 @@ h1, h2, h3, h4, h5, h6, .logo {
     color: #fff;
 }
 
+.cert-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.85rem 1.2rem;
+    border-radius: 999px;
+    background: var(--primary-gradient);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.cert-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(106, 13, 173, 0.35);
+}
+
 /* ===== Skills ===== */
 .skills-grid {
     display: grid;
