@@ -16,17 +16,23 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 const navbar = document.querySelector('.navbar');
 let lastScroll = 0;
 
+const backToTop = document.querySelector('.back-to-top');
+
 window.addEventListener('scroll', () => {
     const currentScroll = window.scrollY;
 
     if (currentScroll > 50) {
-        navbar.style.background = 'rgba(10, 10, 26, 0.92)';
+        navbar.style.background = 'rgba(248, 250, 252, 0.92)';
         navbar.style.backdropFilter = 'blur(20px)';
-        navbar.style.boxShadow = '0 4px 30px rgba(106, 13, 173, 0.15)';
+        navbar.style.boxShadow = '0 4px 30px rgba(15, 23, 42, 0.08)';
     } else {
         navbar.style.background = 'transparent';
         navbar.style.backdropFilter = 'none';
         navbar.style.boxShadow = 'none';
+    }
+
+    if (backToTop) {
+        backToTop.classList.toggle('visible', currentScroll > 400);
     }
 
     lastScroll = currentScroll;
@@ -59,7 +65,7 @@ const heroH2 = document.querySelector('.hero-content h2');
 if (heroH2) {
     const text = heroH2.textContent;
     heroH2.textContent = '';
-    heroH2.style.borderRight = '2px solid rgba(195, 155, 211, 0.8)';
+    heroH2.style.borderRight = '2px solid rgba(16, 185, 129, 0.8)';
     heroH2.style.animation = 'none';
 
     let i = 0;
