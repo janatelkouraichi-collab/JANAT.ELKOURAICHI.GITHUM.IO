@@ -88,15 +88,51 @@ if (heroH2) {
 // ===== Contact form animation =====
 const form = document.querySelector('.contact-form');
 if (form) {
-    form.addEventListener('submit', (e) => {
+    const messageBox = document.querySelector('#form-message');
+
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
+
         const btn = form.querySelector('button');
-        btn.textContent = '✓ Envoyé!';
+        btn.disabled = true;
+        btn.textContent = 'Envoi...';
         btn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
-        setTimeout(() => {
-            btn.textContent = 'Envoyer';
-            btn.style.background = '';
-            form.reset();
-        }, 2500);
+
+        if (messageBox) {
+            messageBox.style.display = 'none';
+            messageBox.textContent = '';
+        }
+
+        try {
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                form.reset();
+                if (messageBox) {
+                    messageBox.textContent = 'Merci ! Votre message a été envoyé avec succès.';
+                    messageBox.style.display = 'block';
+                }
+            } else {
+                throw new Error('Échec de l’envoi');
+            }
+        } catch (error) {
+            console.error('Contact form submission failed:', error);
+            if (messageBox) {
+                messageBox.textContent = 'Désolé, une erreur est survenue. Veuillez réessayer.';
+                messageBox.style.display = 'block';
+            }
+        } finally {
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.textContent = 'Envoyer';
+                btn.style.background = '';
+            }, 2500);
+        }
     });
 }
