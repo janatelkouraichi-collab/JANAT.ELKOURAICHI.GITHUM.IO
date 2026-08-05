@@ -86,26 +86,29 @@ if (heroH2) {
 }
 
 // ===== Contact form animation =====
-const form = document.querySelector('.contact-form');
+const form = document.querySelector('#contact-form');
 if (form) {
     const messageBox = document.querySelector('#form-message');
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        const btn = form.querySelector('button');
-        btn.disabled = true;
-        btn.textContent = 'Envoi...';
-        btn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+        const btn = form.querySelector('button[type="submit"]');
+        if (btn) {
+            btn.disabled = true;
+            btn.textContent = 'Envoi...';
+            btn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+        }
 
         if (messageBox) {
             messageBox.style.display = 'none';
             messageBox.textContent = '';
+            messageBox.style.color = '#16a34a';
         }
 
         try {
             const response = await fetch(form.action, {
-                method: form.method,
+                method: form.method.toUpperCase(),
                 body: new FormData(form),
                 headers: {
                     'Accept': 'application/json'
@@ -119,20 +122,24 @@ if (form) {
                     messageBox.style.display = 'block';
                 }
             } else {
-                throw new Error('Échec de l’envoi');
+                const errorData = await response.json().catch(() => null);
+                throw new Error(errorData?.error || 'Échec de l’envoi');
             }
         } catch (error) {
             console.error('Contact form submission failed:', error);
             if (messageBox) {
                 messageBox.textContent = 'Désolé, une erreur est survenue. Veuillez réessayer.';
+                messageBox.style.color = '#dc2626';
                 messageBox.style.display = 'block';
             }
         } finally {
             setTimeout(() => {
-                btn.disabled = false;
-                btn.textContent = 'Envoyer';
-                btn.style.background = '';
-            }, 2500);
+                if (btn) {
+                    btn.disabled = false;
+                    btn.textContent = 'Envoyer';
+                    btn.style.background = '';
+                }
+            }, 2000);
         }
     });
 }
