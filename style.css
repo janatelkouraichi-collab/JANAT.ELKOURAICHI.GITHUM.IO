@@ -1,38 +1,38 @@
 :root {
-    /* خلفية الصفحة: أوف وايت بارد وهادئ */
-    --bg-color: #F8FAFC;
-    --bg-body: #F8FAFC;
+    /* خلفية الصفحة: أوف وايت دافئ وكلاسيكي */
+    --bg-color: #FDFBF7;
+    --bg-body: #FDFBF7;
     --surface-color: #FFFFFF;
-    --text-color: #334155;
+    --text-color: #2C2420;
 
-    /* اللون الرئيسي: نيلي عميق */
-    --primary: #0F172A;
+    /* لون النصوص والعناوين: بني غامق دافئ */
+    --primary: #2C2420;
 
-    /* لون التمييز الأساسي: ساج غرين هادئ */
-    --accent: #10B981;
+    /* لون التمييز الأساسي: بني ترابي/بندقي أنيق */
+    --accent: #8C5A3C;
 
-    /* لون ثانوي للأزرار والتفاصيل: تيال / أزرق-muted */
-    --accent-secondary: #0EA5E9;
+    /* لون ثانوي للأزرار والتفاصيل: زيتوني هادئ */
+    --accent-secondary: #5B6853;
 
     /* خلفية البطاقات والأقسام: أبيض ناعم جداً */
     --bg-card: #FFFFFF;
 
-    /* لون الحدود والفواصل: رمادي بارد ناعم */
-    --border-color: #E2E8F0;
+    /* لون الحدود والفواصل: ترابي فاتح ناعم */
+    --border-color: #E8E2D9;
 
-    --text-muted: #64748B;
-    --heading-color: #0F172A;
-    --primary-color: #0F172A;
-    --primary-light: #10B981;
-    --accent-blue: #0EA5E9;
-    --primary-royal: #1E293B;
-    --deep-blue: #1E293B;
-    --deep-blue-light: #334155;
-    --primary-gradient: linear-gradient(135deg, #0F172A 0%, #10B981 100%);
-    --glass-bg: rgba(248, 250, 252, 0.9);
-    --glass-border: rgba(15, 23, 42, 0.12);
-    --shadow-soft: rgba(15, 23, 42, 0.08);
-    --shadow-accent: rgba(16, 185, 129, 0.18);
+    --text-muted: #6F655A;
+    --heading-color: #2C2420;
+    --primary-color: #2C2420;
+    --primary-light: #8C5A3C;
+    --accent-blue: #8C5A3C;
+    --primary-royal: #2C2420;
+    --deep-blue: #5B6853;
+    --deep-blue-light: #7A846E;
+    --primary-gradient: linear-gradient(135deg, #2C2420 0%, #8C5A3C 100%);
+    --glass-bg: rgba(255, 255, 255, 0.86);
+    --glass-border: rgba(44, 36, 32, 0.12);
+    --shadow-soft: rgba(44, 36, 32, 0.08);
+    --shadow-accent: rgba(140, 90, 60, 0.18);
 
     /* Typography */
     --font-main: 'Inter', sans-serif;
@@ -56,7 +56,7 @@ html {
 
 body {
     font-family: var(--font-main);
-    background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+    background: linear-gradient(135deg, #FAFAF9 0%, #F5F5F4 100%);
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
