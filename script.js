@@ -86,14 +86,19 @@ if (heroH2) {
 }
 
 // ===== Contact form animation =====
-const form = document.querySelector('#contact-form');
-if (form) {
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('#contact-form');
     const messageBox = document.querySelector('#form-message');
+
+    if (!form) {
+        return;
+    }
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
+        e.stopPropagation();
 
-        const btn = form.querySelector('button[type="submit"]');
+        const btn = form.querySelector('button[type="submit"], button');
         if (btn) {
             btn.disabled = true;
             btn.textContent = 'Envoi...';
@@ -108,7 +113,8 @@ if (form) {
 
         try {
             const response = await fetch(form.action, {
-                method: form.method.toUpperCase(),
+                method: 'POST',
+                mode: 'cors',
                 body: new FormData(form),
                 headers: {
                     'Accept': 'application/json'
@@ -142,4 +148,4 @@ if (form) {
             }, 2000);
         }
     });
-}
+});
