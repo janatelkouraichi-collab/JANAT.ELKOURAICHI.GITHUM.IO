@@ -1,280 +1,373 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janat Elkouraichi - Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="background-elements">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Janat Elkouraichi — candidate au stage au Parlement, spécialisée en actions publiques, ingénierie financière et modernisation digitale."
+    />
+    <title>Janat Elkouraichi | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-glow glow-one"></div>
+    <div class="page-glow glow-two"></div>
 
-    <nav class="navbar">
-        <div class="nav-container glass">
-            <a href="#" class="logo">Janat Elkouraichi</a>
-            <ul class="nav-links">
-                <li><a href="#about">Profil</a></li>
-                <li><a href="#experience">Expériences</a></li>
-                <li><a href="#education">Éducation</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Navigation principale">
+        <div class="nav-inner">
+          <a href="#top" class="brand" aria-label="Accueil">
+            <span class="brand-mark">JE</span>
+            <span class="brand-name">Janat Elkouraichi</span>
+          </a>
+
+          <div class="nav-links">
+            <a href="#about">Profil</a>
+            <a href="#experience">Expériences</a>
+            <a href="#formation">Formation</a>
+            <a href="#skills">Compétences</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <a href="#contact" class="nav-cta">Contact</a>
         </div>
-    </nav>
+      </nav>
+    </header>
 
-    <main id="top" class="container">
-        <!-- Hero Section -->
-        <section id="hero" class="hero section">
-            <div class="hero-content glass-card fade-in">
-                <h1>Janat Elkouraichi</h1>
-                <h2>Marketing & Transformation Digitale</h2>
-                <p>Professionnelle dynamique et polyvalente, experte en communication multi-canal, gestion de projets média et solutions innovantes (No-Code & IA).</p>
-                <div class="cta-buttons">
-                    <a href="#experience" class="btn btn-primary">Découvrir mes expériences</a>
-                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
-                </div>
-            </div>
-            <div class="hero-image fade-in delay-1">
-                <div class="image-wrapper glass-card p-0">
-                   <!-- Photo of Janat -->
-                   <img src="profile.jpg" alt="Janat Elkouraichi" style="object-position: top;" />
-                </div>
-            </div>
-        </section>
+    <main>
+      <section id="top" class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Candidate au Stage au Parlement</p>
+          <h1>Janat Elkouraichi</h1>
+          <p class="subtitle">Actions Publiques, Ingénierie Financière & Modernisation Digitale</p>
 
-        <!-- About / Profile Section -->
-        <section id="about" class="section">
-            <div class="section-header fade-in">
-                <h2 class="title">Profil Professionnel</h2>
-            </div>
-            <div class="grid-2">
-                <div class="about-content glass-card fade-in delay-1">
-                    <p>Titulaire d'une Licence en Marketing et Transformation Digitale. Capacité démontrée à manager des équipes, à optimiser la visibilité de marque et à délivrer des résultats quantifiables.</p>
-                    
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <h3>Leadership</h3>
-                            <p>Déléguée de Promotion (2024) et Chef de Projet Enactus UM5.</p>
-                        </div>
-                        <div class="highlight-item">
-                            <h3>Technique</h3>
-                            <p>No-Code Creator IA, CMS WordPress.</p>
-                        </div>
-                        <div class="highlight-item">
-                            <h3>Polyvalence</h3>
-                            <p>Stratégie marketing, gestion de projet, comptabilité, statistiques.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-gallery fade-in delay-2">
-                    <img src="enactus.jpg" alt="Janat at Enactus" class="gallery-img img-1 float-anim">
-                    <img src="presentation.jpg" alt="Janat presenting" class="gallery-img img-2 float-anim delay-2">
-                </div>
-            </div>
-        </section>
+          <p class="lede">
+            Étudiante en Master Management des Actions Publiques et Ingénierie Financière
+            Publique à l’UM5-FSJES Agdal. Je combine compétences en finance publique,
+            analyse des politiques publiques, communication institutionnelle et innovation
+            digitale pour contribuer à des projets publics plus efficaces, transparents et
+            orientés impact.
+          </p>
 
-        <!-- Experience Section -->
-        <section id="experience" class="section">
-            <div class="section-header fade-in">
-                <h2 class="title">Expériences Professionnelles</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item glass-card fade-in delay-1">
-                    <div class="timeline-date">2026 – Présent</div>
-                    <h3 class="timeline-title">Head of Marketing & Media</h3>
-                    <h4 class="timeline-company">ALIC - Rabat, Maroc</h4>
-                    <ul>
-                        <li>Direction des stratégies de communication multi-canal (hausse de 30% de la visibilité globale de la marque).</li>
-                        <li>Supervision opérationnelle et leadership d'une équipe pluridisciplinaire de 4 personnes pour la création de contenu média.</li>
-                        <li>Pilotage et optimisation de campagnes marketing digitales avec un suivi rigoureux des KPIs (engagement +25%).</li>
-                    </ul>
-                    <p style="margin-top: 1rem;"><a href="https://drive.google.com/file/d/1-Y9lZAb0oGQHAtSRMPZthnnesTGtHN_x/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 600; text-decoration: none;">Voir mes missions</a></p>
-                </div>
-                
-                <div class="timeline-item glass-card fade-in delay-2">
-                    <div class="timeline-date">2025</div>
-                    <h3 class="timeline-title">Développeuse No-Code / Creator IA</h3>
-                    <h4 class="timeline-company">PACTFORM - Rabat, Maroc</h4>
-                    <ul>
-                        <li>Conception No-Code de la plateforme LMS et intégration de solutions d'IA (Ready AI, Google Antigravity).</li>
-                        <li>Supervision complète de l'architecture et déploiement du produit final sans codage traditionnel.</li>
-                        <li>Coordination d'équipe et force de proposition technique lors des phases de cadrage.</li>
-                    </ul>                    <p style="margin-top: 1rem;"><a href="https://share.google/BtrpW6RFjWKvcVA5F" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 600; text-decoration: none;">Voir la démo PACTFORM</a></p>                </div>
+          <div class="hero-actions">
+            <a href="#experience" class="button primary">Découvrir mon parcours</a>
+            <a href="mailto:Janat.elkouraichi@gmail.com" class="button secondary">Me contacter</a>
+          </div>
 
-                <div class="timeline-item glass-card fade-in delay-3">
-                    <div class="timeline-date">2025</div>
-                    <h3 class="timeline-title">Stage Pratique</h3>
-                    <h4 class="timeline-company">Cabinet d'Expertise Comptable - Rabat, Maroc</h4>
-                    <ul>
-                        <li>Gestion autonome de la saisie comptable de 15 dossiers clients sur SAGE et CIEL Compta.</li>
-                        <li>Préparation des déclarations fiscales et traitement social en conformité avec la réglementation.</li>
-                    </ul>
-                    <p style="margin-top: 1rem;"><a href="https://drive.google.com/file/d/1snNIpuvTlCOHzDoHXBgx4QS0AJBR9Tos/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 600; text-decoration: none;">Voir le rapport de stage</a></p>
-                </div>
+          <div class="contact-inline">
+            <span>+212 6 49 78 87 86</span>
+            <span>Janat.elkouraichi@gmail.com</span>
+            <span>Témara, Maroc</span>
+          </div>
+        </div>
 
-                 <div class="timeline-item glass-card fade-in delay-4">
-                    <div class="timeline-date">2025</div>
-                    <h3 class="timeline-title">Stage</h3>
-                    <h4 class="timeline-company">Trésorerie Générale du Royaume (TGR) - Rabat, Maroc</h4>
-                    <ul>
-                        <li>Contrôle de plus de 100 dossiers de comptes de dépôts et gestion des risques financiers.</li>
-                        <li>Analyse des flux financiers (réduction de 15% des délais de traitement).</li>
-                    </ul>
-                    <p style="margin-top: 1rem;"><a href="https://drive.google.com/file/d/1fC4jPIr0KGiK8JB4nSnR9Nqzl9_BOuJx/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 600; text-decoration: none;">Voir le rapport de stage</a></p>
-                </div>
-            </div>
-        </section>
+        <div class="hero-visual reveal reveal-delay-1">
+          <div class="portrait-card">
+            <span class="status-badge">Disponible pour un stage</span>
+            <img src="profile.jpg" alt="Portrait de Janat Elkouraichi" />
+            <div class="floating-tag">Finance publique • IA • Gouvernance</div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Education & Certifications -->
-        <section id="education" class="section grid-2">
-            <div>
-                <div class="section-header fade-in">
-                    <h2 class="title">Diplômes & Éducation</h2>
-                </div>
-                <div class="education-list fade-in delay-1">
-                    <div class="edu-item glass-card">
-                        <div class="edu-year">2023 – 2026</div>
-                        <h3>Licence en Marketing et Transformation Digitale</h3>
-                        <h4>Université Mohammed V - FSJES Souissi, Rabat</h4>
-                        <p>Stratégie marketing, transformation digitale, gestion de projet, comptabilité, analyse financière, statistiques.</p>
-                    </div>
-                    <div class="edu-item glass-card">
-                        <div class="edu-year">2022 – 2023</div>
-                        <h3>Baccalauréat Sciences Physiques et Chimiques</h3>
-                        <h4>Lycée Chefchaouini, Témara</h4>
-                    </div>
-                </div>
+      <section id="about" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Profil</p>
+          <h2>Une approche professionnelle à la fois publique, analytique et orientée transformation.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="story-panel reveal">
+            <p>
+              Étudiante en Master Management des Actions Publiques et Ingénierie Financier
+              Publique, je mets en synergie mes compétences en finance publique,
+              évaluation des politiques publiques, management, communication institutionnelle
+              et innovation digitale. Mon objectif est d’apporter une lecture stratégique des
+              enjeux publics et de contribuer à la modernisation des processus institutionnels.
+            </p>
+            <p>
+              Mon parcours, à la fois académique et professionnel, m’a permis de développer
+              une compréhension concrète des mécanismes de gestion publique, des risques
+              réglementaires et de la transformation numérique. Je souhaite participer aux
+              travaux administratifs et législatifs du Parlement du Royaume du Maroc afin de
+              soutenir des décisions publiques plus efficaces, plus transparentes et plus
+              centrées sur le citoyen.
+            </p>
+            <div class="signature">Janat Elkouraichi</div>
+          </div>
+
+          <div class="info-grid reveal reveal-delay-1">
+            <article class="info-card">
+              <span class="card-label">Analyse</span>
+              <h3>Finance publique</h3>
+              <p>Contrôle, flux financiers, conformité, gestion des risques et évaluation des dossiers publics.</p>
+            </article>
+
+            <article class="info-card">
+              <span class="card-label">Public</span>
+              <h3>Politiques publiques</h3>
+              <p>Évaluation des politiques, performance administrative, gouvernance et modernisation des services.</p>
+            </article>
+
+            <article class="info-card">
+              <span class="card-label">Digital</span>
+              <h3>IA & Civic Tech</h3>
+              <p>Projets IA, outils digitaux, communication institutionnelle et solutions orientées impact citoyen.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Expériences</p>
+          <h2>Un parcours de terrain en finance, administration et innovation digitale.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2025</div>
+            <div class="timeline-card">
+              <h3>Stage Pratique</h3>
+              <div class="company">Trésorerie Générale du Royaume (TGR) • Rabat</div>
+              <ul>
+                <li>Contrôle et vérification réglementaire de plus de 100 dossiers de comptes de dépôts (CDAV/CDAT).</li>
+                <li>Traitement des incidents financiers et gestion des Avis à Tiers Détenteur (ATD).</li>
+                <li>Analyse des flux financiers ayant permis une réduction de 15 % des délais de traitement.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-date">2025</div>
+            <div class="timeline-card">
+              <h3>Stage Pratique</h3>
+              <div class="company">Cabinet d’Expertise Comptable • Rabat</div>
+              <ul>
+                <li>Gestion autonome de la saisie comptable de 15 dossiers clients sur SAGE et CIEL.</li>
+                <li>Déclarations fiscales (TVA) et sociales (Paie, CNSS, IGR) conformes à la réglementation marocaine.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-date">2025 – Présent</div>
+            <div class="timeline-card">
+              <h3>Head of Marketing & Media</h3>
+              <div class="company">ALIC • Rabat</div>
+              <ul>
+                <li>Direction de la stratégie de communication multicanal et suivi des performances (KPIs).</li>
+                <li>Supervision et encadrement d’une équipe pluridisciplinaire de 4 personnes.</li>
+                <li>Développement de contenus, storytelling institutionnel et optimisation de la visibilité de marque.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal reveal-delay-3">
+            <div class="timeline-date">2025</div>
+            <div class="timeline-card">
+              <h3>Développeuse Vibe Coding / Creator AI</h3>
+              <div class="company">PACTFORMS.COM • Rabat</div>
+              <ul>
+                <li>Conception d’une plateforme LMS et intégration d’outils d’IA (Ready AI, Google Antigravity).</li>
+                <li>Participation à l’architecture, la logique produit et au déploiement de solutions numériques.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="formation" class="section split-layout">
+        <div class="edu-panel reveal">
+          <div class="section-heading left-aligned">
+            <p class="eyebrow">Formation</p>
+            <h2>Parcours académique.</h2>
+          </div>
+
+          <div class="edu-list">
+            <article class="edu-item">
+              <span class="edu-year">2026 – Présent</span>
+              <h3>Master Management des Actions Publiques & Ingénierie Financière Publique</h3>
+              <p>UM5 - FSJES Agdal, Rabat</p>
+              <small>Finances publiques, droit parlementaire, évaluation des politiques publiques, contrôle de gestion public.</small>
+            </article>
+
+            <article class="edu-item">
+              <span class="edu-year">2023 – 2026</span>
+              <h3>Licence en Marketing et Transformation Digitale</h3>
+              <p>UM5 - FSJES Souissi, Rabat</p>
+              <small>Stratégie marketing, transformation digitale, gestion de projet, CMS et community management.</small>
+            </article>
+          </div>
+        </div>
+
+        <div class="cert-panel reveal reveal-delay-1">
+          <div class="section-heading left-aligned">
+            <p class="eyebrow">Engagement</p>
+            <h2>Leadership & implication citoyenne.</h2>
+          </div>
+
+          <ul class="engagement-list">
+            <li>
+              <strong>Déléguée de Promotion (2026)</strong>
+              <span>UM5 FSJES Souissi — porte-parole auprès de l’administration, gestion des plannings et médiation.</span>
+            </li>
+            <li>
+              <strong>Chef de Projet / Membre Actif (2025-2026)</strong>
+              <span>Enactus UM5 — business plans à impact social et compétitions de pitch.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Compétences</p>
+          <h2>Des compétences clés, utiles à l’action publique, à la gestion et à l’innovation.</h2>
+        </div>
+
+        <div class="skill-grid">
+          <article class="skill-card reveal">
+            <h3>Compétences clés</h3>
+            <ul class="chip-list">
+              <li>Analyse financière publique</li>
+              <li>Évaluation des politiques publiques</li>
+              <li>Conformité & gestion des risques</li>
+              <li>Communication institutionnelle</li>
+              <li>Projets IA & Civic Tech</li>
+              <li>Leadership & esprit d'équipe</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal reveal-delay-1">
+            <h3>Langues</h3>
+            <div class="language-list">
+              <div><span>Arabe</span><em>Maternelle</em></div>
+              <div><span>Français</span><em>Courant</em></div>
+              <div><span>Anglais</span><em>Courant</em></div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal reveal-delay-2">
+            <h3>Centres d’intérêt</h3>
+            <ul class="chip-list">
+              <li>Volleyball</li>
+              <li>Arts visuels</li>
+              <li>Photographie</li>
+              <li>Lecture</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="certifications" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Certifications</p>
+          <h2>Formations complémentaires qui renforcent mes compétences.</h2>
+        </div>
+
+        <div class="cert-grid">
+          <article class="cert-card reveal">
+            <span class="cert-year">2026</span>
+            <h3>AI Fundamentals</h3>
+            <p>Google</p>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-1">
+            <span class="cert-year">2026</span>
+            <h3>Gestion de Projets Digitaux</h3>
+            <p>GOLDEV</p>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-2">
+            <span class="cert-year">2026</span>
+            <h3>Advertising with Meta</h3>
+            <p>Meta</p>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-3">
+            <span class="cert-year">2025</span>
+            <h3>SEO Essentials</h3>
+            <p>Semrush</p>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-4">
+            <span class="cert-year">2023</span>
+            <h3>Environment & Gender</h3>
+            <p>UNICEF Maroc</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="contact-shell">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Travaillons ensemble sur des missions à impact public, institutionnel ou digital.</h2>
+            <p>
+              Je suis ouverte aux opportunités de stage, d’apprentissage, de collaboration ou
+              de mission dans les domaines de la gouvernance publique, de la finance publique,
+              de la communication institutionnelle et des solutions numériques à impact.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-row">
+                <span class="icon">📍</span>
+                <span>Témara, Maroc</span>
+              </div>
+              <div class="contact-row">
+                <span class="icon">📞</span>
+                <a href="tel:+212649788786">+212 6 49 78 87 86</a>
+              </div>
+              <div class="contact-row">
+                <span class="icon">✉️</span>
+                <a href="mailto:Janat.elkouraichi@gmail.com">Janat.elkouraichi@gmail.com</a>
+              </div>
+              <div class="contact-row">
+                <span class="icon">🔗</span>
+                <a href="https://linkedin.com/in/janat-elkouraichi" target="_blank" rel="noreferrer">linkedin.com/in/janat-elkouraichi</a>
+              </div>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form reveal reveal-delay-1" action="https://formspree.io/f/mvzenrpd" method="POST">
+            <div class="field-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required />
             </div>
 
-            <div>
-                <div class="section-header fade-in">
-                    <h2 class="title">Certifications</h2>
-                </div>
-                <div class="cert-list glass-card fade-in delay-2">
-                    <ul>
-                        <li><strong>Gestion de projets digitaux (2026)</strong> - GOLDEV</li>
-                        <li><strong>CMS WordPress (2026)</strong> - UM5 FSJES Souissi</li>
-                        <li><strong>Coaching MBTI (2025)</strong> - UM5 FSJES Souissi</li>
-                        <li><strong>Soft Skills for Success (2025)</strong> - UM5 FSJES Souissi</li>
-                        <li><strong>The 100% Digital Enterprise (2025)</strong> - L'Espace Cadres-Rabat</li>
-                        <li><strong>SEO Essentials (2025)</strong> - Semrush Academy</li>
-                        <li><strong>Environment and Gender (2023)</strong> - UNICEF Maroc</li>
-                    </ul>
-                    <a href="https://drive.google.com/drive/folders/15uvv-qBtk4iXQ_77C8LG5f-rL5Tu3Z-B" target="_blank" rel="noopener noreferrer" class="cert-link">
-                        Voir mes certifications PDF
-                    </a>
-                </div>
+            <div class="field-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Votre adresse email" required />
             </div>
-        </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="section-header fade-in">
-                <h2 class="title">Compétences</h2>
+            <div class="field-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
             </div>
-            
-            <div class="skills-grid fade-in delay-1">
-                <div class="skill-category glass-card">
-                    <h3>Soft Skills</h3>
-                    <ul class="tag-list">
-                        <li class="tag">Esprit d'analyse & Synthèse</li>
-                        <li class="tag">Prise d'initiative & Autonomie</li>
-                        <li class="tag">Force de proposition</li>
-                        <li class="tag">Leadership & Esprit d'équipe</li>
-                        <li class="tag">Adaptabilité & Créativité</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category glass-card">
-                    <h3>Langues</h3>
-                    <div class="lang-item">
-                        <span class="lang-name">Arabe</span>
-                        <span class="lang-level">Maternelle</span>
-                    </div>
-                    <div class="lang-item">
-                        <span class="lang-name">Français</span>
-                        <span class="lang-level">Courant (B2)</span>
-                    </div>
-                    <div class="lang-item">
-                        <span class="lang-name">Anglais</span>
-                        <span class="lang-level">Courant (B2)</span>
-                    </div>
-                </div>
 
-                <div class="skill-category glass-card">
-                    <h3>Loisirs</h3>
-                    <ul class="tag-list">
-                        <li class="tag">Photographie digitale</li>
-                        <li class="tag">Dessin et Arts visuels</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-             <div class="section-header fade-in">
-                <h2 class="title">Contact</h2>
-            </div>
-            
-            <div class="contact-grid">
-                <div class="contact-info glass-card fade-in delay-1">
-                    <h3>Prenons contact</h3>
-                    <p>Je suis toujours ouverte à de nouvelles opportunités passionnantes.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-row">
-                            <span class="icon">📍</span>
-                            <span>Témara, Maroc</span>
-                        </div>
-                        <div class="contact-row">
-                            <span class="icon">📞</span>
-                            <span>+212 6 49 78 87 86</span>
-                        </div>
-                        <div class="contact-row">
-                            <span class="icon">✉️</span>
-                            <a href="mailto:Janat.elkouraichi@gmail.com">Janat.elkouraichi@gmail.com</a>
-                        </div>
-                        <div class="contact-row">
-                            <span class="icon">🔗</span>
-                            <a href="https://linkedin.com/in/janat-elkouraichi" target="_blank">LinkedIn</a>
-                        </div>
-                    </div>
-                </div>
-
-                <form id="contact-form" class="contact-form glass-card fade-in delay-2" action="https://formspree.io/f/mvzenrpd" method="POST">
-                    <div class="form-group">
-                        <label for="name">Nom</label>
-                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Votre email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-full">Envoyer</button>
-                    <div id="form-message" class="form-message" role="status" aria-live="polite" style="display:none; margin-top:1rem; color: #16a34a;"></div>
-                </form>
-            </div>
-        </section>
+            <button type="submit" class="button primary full-width">Envoyer</button>
+            <div id="form-message" class="form-message" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer glass">
-        <p>&copy; 2026 Janat Elkouraichi. Tous droits réservés.</p>
+    <footer class="site-footer">
+      <p>© 2026 Janat Elkouraichi</p>
+      <a href="#top">Retour en haut</a>
     </footer>
 
-    <a href="#top" class="back-to-top" aria-label="Retour en haut">↑</a>
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
+
+
