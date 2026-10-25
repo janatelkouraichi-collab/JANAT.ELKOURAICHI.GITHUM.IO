@@ -59,7 +59,7 @@ if (form) {
       form.reset();
       if (formMessage) {
         formMessage.textContent = 'Merci ! Votre message a bien été envoyé.';
-        formMessage.style.color = '#1d3557';
+        formMessage.style.color = '#1b2a3d';
       }
     } catch (error) {
       console.error(error);
